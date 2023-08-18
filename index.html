@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão HTML e CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li>
+                    <a href="#listas">Listas</a>
+                </li>
+                <li>
+                    <a href="#tabelas">Tabelas</a>
+                </li>
+                <li>
+                    <a href="#formularios">Formulários</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <section id="listas" class="container">
+            <h2>Listas</h2>
+
+            <div>
+                <div>
+                    <ol>
+                    <h3>Melhores jogos para o fim de semana</h3>
+                        <li>ARK Survival Evolved</li>
+                        <li>MINECRAFT</li>
+                        <li>FORZA HORIZON 5</li>
+                        <li>OVERCOOCKED 2</li>
+                        <li>CALL OF DUTY</li>
+                    </ol>
+        </div>
+
+            <div>
+                <ul>
+                    <h3>Melhores comidas para o fim de semana</h3>
+                    <li>STROGONOFF</li>
+                    <li>HOT-DOG</li>
+                    <li>PIZZA</li>
+                    <li>HAMBÚRGUER</li>
+                    <li>BOLO DE CENOURA</li>
+                </ul>
+        </div>
+        </div>
+
+        </section>
+        <section id="tabelas" class="container">
+            <h2>Tabelas</h2>
+                <div>
+                      <table>
+                        <tr>
+                          <th>Comida</th>
+                          <th>Jogos</th>
+                          <th>Esportes</th>
+                          <th>Nomes</th>
+                        </tr>
+                        <tr>
+                          <td>Hot Dog</td>
+                          <td>Ark</td>
+                          <td>Futebol</td>
+                          <td>Joseph Strawbarry</td>
+                        </tr>
+                        <tr>
+                          <td>Hambúrguer</td>
+                          <td>FIFA</td>
+                          <td>Vôlei</td>
+                          <td>Mariano Flores</td>
+                        </tr>
+                        <tr>
+                          <td>Strogonoff</td>
+                          <td>Minecraft</td>
+                          <td>Basket</td>
+                          <td>Jefferson</td>
+                        </tr>
+                        <tr>
+                          <td>Macarrão</td>
+                          <td>Call of Duty</td>
+                          <td>Natação</td>
+                          <td>Victinhu</td>
+                        </tr>
+                        <tr>
+                          <td>Carbonara</td>
+                          <td>Fortnite</td>
+                          <td>Corrida</td>
+                          <td>Vitório</td>
+                        </tr>
+                        <tr>
+                          <td>Churrasco</td>
+                          <td>Forza Horizon</td>
+                          <td>Arremesso de Dardo</td>
+                          <td>Márcio Marçal</td>
+                        </tr>
+                        <tr>
+                          <td>Arroz e Feijão</td>
+                          <td>OVERCOOCKED</td>
+                          <td>Arremesso de Peso</td>
+                          <td>Wellington</td>
+                        </tr>
+                        <tr>
+                          <td>Matheus Wenceslau</td>
+                          <td>Battelfield</td>
+                          <td>Salto com Vara</td>
+                          <td>Mário, Aquele que te...</td>
+                        </tr>
+                      </table>
+                      
+                </div>
+        </section>
+        <section id="formularios" class="container">
+            <h2>Formulários</h2>
+            <div>
+                <h2>Exemplo de Formulário</h2>
+
+                    <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" max="99" required>
+                    
+                    <label for="genero">Gênero:</label>
+                    <select id="genero" name="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="nao-binario">Não-Binário</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+                    
+                    <input type="submit" value="Enviar">
+                    </form>
+            </div>
+
+            <form action="/submit" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required><br><br>
+            
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+            
+                <input type="submit" value="Enviar">
+            </form>
+            
+        </section>
+    </main>
+
+</body>
+</html>
